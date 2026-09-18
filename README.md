@@ -156,7 +156,7 @@ The `JohnTyler-Lab` subscription includes a dedicated monthly lab budget:
 
 ```text
 Azure-Lab-Monthly-Budget
-Budget: $30/month
+Budget: $25/month
 ```
 
 Budget notifications provide early visibility into unexpected cloud spend. VM auto-shutdown is also configured as a direct operational cost-control measure.
