@@ -32,18 +32,18 @@ This lab was built to go beyond a basic "deploy a VM" exercise. The environment 
 ## Architecture
 
 ```mermaid
-flowchart TB
-    SUB[JohnTyler-Lab Subscription]
-    RG[rg-azure-enterprise-lab]
-    VNET[vnet-prod-lab]
-    MGMT[snet-management\n10.10.10.0/24]
-    SERV[snet-servers\n10.10.20.0/24]
-    NSGM[nsg-management]
-    NSGS[nsg-servers]
-    VM[vm-win01\nWindows Server 2022]
-    POLICY[Azure Policy\nEnvironment tag inheritance]
-    MON[Azure Monitor\nActivity Log Alerts]
-    COST[Cost Management\nMonthly Budget + Alerts]
+flowchart TD
+    SUB["JohnTyler-Lab Subscription"]
+    RG["rg-azure-enterprise-lab"]
+    VNET["vnet-prod-lab"]
+    MGMT["snet-management<br/>10.10.10.0/24"]
+    SERV["snet-servers<br/>10.10.20.0/24"]
+    NSGM["nsg-management"]
+    NSGS["nsg-servers"]
+    VM["vm-win01<br/>Windows Server 2022"]
+    POLICY["Azure Policy<br/>Environment tag inheritance"]
+    MON["Azure Monitor<br/>Activity Log Alerts"]
+    COST["Cost Management<br/>Monthly Budget and Alerts"]
 
     SUB --> RG
     RG --> VNET
